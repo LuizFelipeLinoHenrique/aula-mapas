@@ -42,5 +42,11 @@ export default function Index() {
                 };
             };
         };
-    });
+
+        getLocation();
+        return () => {
+            active = false;
+        };
+
+    }, []);
 };
